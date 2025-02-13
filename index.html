@@ -67,7 +67,7 @@
                     hilera.appendChild(celda3);
                     tbody.appendChild(hilera);
             //Subo a la API los resultados
-            await fetch("https://crudcrud.com/api/0e01f49ffa134d4a80cece4b7bc8d0b2/resultados",{
+            await fetch("https://67ac7e2c5853dfff53daf268.mockapi.io/dados",{
                 method: 'POST', 
                 headers: {'Content-Type':'application/json'},
                 body:JSON.stringify({dado1:dado1, dado2:dado2, Suma:Suma})
@@ -81,7 +81,7 @@
         }
         async function verResultados(){
             console.log("inicio de la peticion");
-            let respuesta = await fetch("https://crudcrud.com/api/0e01f49ffa134d4a80cece4b7bc8d0b2/resultados");
+            let respuesta = await fetch("https://67ac7e2c5853dfff53daf268.mockapi.io/dados");
             let datos = await respuesta.json();
             console.log("datos obtenidos", datos);
             let texto = "";
