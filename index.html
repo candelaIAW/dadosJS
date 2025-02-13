@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Lanzamiento de dado</h1>
+    <h1>Lanzamiento de dado de Candela</h1>
     <button onclick="lanzarActualizar()">Lanzar</button>
     <button onclick="verResultados()">Resultados</button>
     <table>
@@ -17,8 +17,8 @@
         </thead>
         <tbody id="tabla">
             <tr> 
-                <td ><img id="dado1" src="./img/dado1.png"></td>
-                <td ><img id="dado2" src="./img/dado1.png"></td>
+                <td ><img id="dado1" src="img/dado1.png"></td>
+                <td ><img id="dado2" src="img/dado2.png"></td>
                 <td id="Suma">3</td>
             </tr>
 
@@ -77,7 +77,7 @@
         }
 
         function obtenerNombreImg(valor){
-            return "./img/dado" + valor + ".png";
+            return "img/dado" + valor + ".png";
         }
         async function verResultados(){
             console.log("inicio de la peticion");
